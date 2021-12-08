@@ -1,0 +1,147 @@
+html {
+  font-size: 100%; /* 16px par défaut */
+  /* font-family: "DM Sans", sans-serif; */
+}
+
+body {
+  font-size: 0.75em; /* 12px */
+  /* margin-top: 2em; */
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2em; /* 24px */
+}
+a {
+  text-decoration: none;
+}
+
+.displaynone {
+  display: none;
+}
+header {
+  text-align: center;
+}
+.logo {
+  width: 22.33em;
+  margin: 2em 0;
+}
+.input-group {
+  display: flex;
+}
+input.searchBar {
+  width: 100%;
+  border: none;
+  background-color: #e7e7e7;
+  height: 69px;
+  padding: 1em;
+  border-radius: 5px 0 0 5px;
+}
+.fas.fa-search {
+  font-size: 32px;
+  background-color: #e7e7e7;
+  height: 69px;
+  display: flex;
+  align-items: center;
+  padding-right: 0.5em;
+}
+main {
+  margin-top: 2em;
+}
+.tags {
+  margin-bottom: 2em;
+  display: flex;
+}
+.tags-filter {
+  color: #fff;
+  border: none;
+  min-width: 107px;
+  height: 37px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 16px;
+}
+.ingredients-tag {
+  background-color: #3282f7;
+  display: none;
+}
+.device-tag {
+  margin: 0 20px;
+  background-color: #68d9a4;
+  display: none;
+}
+.utensils-tag {
+  background-color: #ed6454;
+  display: none;
+}
+i.far.fa-times-circle {
+  font-size: 19px;
+}
+.btn-search {
+  display: flex;
+  flex-direction: row;
+}
+.btnFilter {
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  width: 170px;
+  height: 69px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#ingredients {
+  background-color: #3282f7;
+}
+#appareil {
+  margin: 0 20px;
+  background-color: #68d9a4;
+}
+#ustensiles {
+  background-color: #ed6454;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card {
+  width: 380px;
+  height: 364px;
+  background: #e7e7e7;
+  margin-top: 5em;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.card__image {
+  height: 178px;
+  background: #c7bebe;
+}
+.card__content {
+  max-width: 340px;
+  margin: 0 auto;
+}
+.card__content__header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.card__content__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+.ingredients p {
+  margin: 0;
+}
+.recipe {
+  max-width: 171px;
+}
