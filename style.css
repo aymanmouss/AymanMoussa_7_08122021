@@ -20,7 +20,7 @@ a {
 .displaynone {
   display: none;
 }
-header {
+header.container {
   text-align: center;
 }
 .logo {
@@ -131,7 +131,7 @@ i.far.fa-times-circle {
 .card__content__header {
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 16px;
 }
 .card__content__main {
   display: flex;
@@ -144,4 +144,8 @@ i.far.fa-times-circle {
 }
 .recipe {
   max-width: 171px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
 }
