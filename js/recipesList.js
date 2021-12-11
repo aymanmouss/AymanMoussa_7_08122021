@@ -10,11 +10,15 @@ export default class RecipesList {
             </header>
             <section class="card__content__main">
                 <article class="ingredients">
-                    <p>Lait de coco: 400ml</p>
-                    <p>Jus de citron: 2</p>
-                    <p>Créme de coco: 4 cuillères</p>
-                    <p>Sucre: 20g</p>
-                    <p>Glaçons: 2</p>
+                ${recipes.ingredients
+                  .map((item) => {
+                    return `
+                    <p><span class="ingredient">${item.ingredient}</span> ${
+                      item.quantity ? ":" + item.quantity : ""
+                    } ${item.unit ? item.unit : ""}</p>
+                    `;
+                  })
+                  .join("")}
                 </article>
                 <aside class="recipe">
                     <p>${recipes.description}</p>
