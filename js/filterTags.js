@@ -13,7 +13,6 @@ export default class FilterTags {
         arr3.push(data);
       });
     });
-    console.log(arr2);
     return `
         <button type="button" id="ingredients" class="btnFilter">Ingredients<i class="fas fa-chevron-down"></i>
         <div class="taglist-btn displaynone" id="tag-ingredients">

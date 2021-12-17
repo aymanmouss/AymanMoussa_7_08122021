@@ -1,7 +1,7 @@
 export default class RecipesList {
   card(recipes) {
     return `
-        <section class="card">
+        <section class="card" id=${recipes.id}>
         <header class="card__image"></header>
         <section class="card__content">
             <header class="card__content__header">
