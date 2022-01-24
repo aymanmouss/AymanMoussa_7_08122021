@@ -2,8 +2,10 @@ import recipesData from "./js/recipesData.js";
 import RecipesList from "./js/recipesList.js";
 import FilterTags from "./js/filterTags.js";
 import FilterList from "./js/filterList.js";
+import MainSearch from "./js/mainSearch.js";
 const cards = document.getElementsByClassName("cards");
 const btnSearch = document.getElementsByClassName("btn-search");
+const searchBar = document.getElementsByClassName("searchBar");
 recipesData.map((item) => {
   cards[0].innerHTML += new RecipesList().card(item);
 });
@@ -11,3 +13,4 @@ recipesData.map((item) => {
 btnSearch[0].innerHTML = new FilterTags().tags();
 
 new FilterList();
+new MainSearch();

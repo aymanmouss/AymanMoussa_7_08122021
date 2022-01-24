@@ -60,12 +60,15 @@ export default class FilterList {
       // click icone close filter tag (ingredients)
       if (e.target.classList.value === "far fa-times-circle 1") {
         ingredientsTag[0].classList.add("displaynone");
+        ingTag[0].innerText = "";
       }
       if (e.target.classList.value === "far fa-times-circle 2") {
         deviceTag[0].classList.add("displaynone");
+        appTag[0].innerText = "";
       }
       if (e.target.classList.value === "far fa-times-circle 3") {
         utensilsTag[0].classList.add("displaynone");
+        ustTag[0].innerText = "";
       }
     });
   }
