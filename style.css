@@ -108,6 +108,13 @@ i.far.fa-times-circle {
   background-color: #ed6454;
   position: relative;
 }
+.infoSearch {
+  background-color: #cce5ff;
+  color: #0f4084;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 1.6em;
+}
 .cards {
   display: flex;
   justify-content: space-between;
