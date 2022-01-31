@@ -1,9 +1,10 @@
-const searchBar = document.getElementsByClassName("searchBar");
-const cards = document.getElementsByClassName("cards");
-const infoSearch = document.getElementsByClassName("infoSearch");
 import recipesData from "./recipesData.js";
 import RecipesList from "./recipesList.js";
 import TagFilterDisplay from "./tagsDisplay.js";
+const searchBar = document.getElementsByClassName("searchBar");
+const cards = document.getElementsByClassName("cards");
+const infoSearch = document.getElementsByClassName("infoSearch");
+
 let results = [];
 
 export default class MainSearch {
@@ -11,26 +12,20 @@ export default class MainSearch {
     searchBar[0].addEventListener("keyup", (e) => {
       if (searchBar[0].value.length >= 3) {
         results = [];
-        recipesData.map((item) => {
-          if (
+        results = recipesData.filter((item) => {
+          return (
             item.name
               .toLowerCase()
               .includes(searchBar[0].value.toLowerCase()) ||
             item.description
               .toLowerCase()
-              .includes(searchBar[0].value.toLowerCase())
-          ) {
-            results.push(item);
-          }
-          item.ingredients.map((ing) => {
-            if (
-              ing.ingredient
+              .includes(searchBar[0].value.toLowerCase()) ||
+            item.ingredients.some((ing) => {
+              return ing.ingredient
                 .toLowerCase()
-                .includes(searchBar[0].value.toLowerCase())
-            ) {
-              results.push(item);
-            }
-          });
+                .includes(searchBar[0].value.toLowerCase());
+            })
+          );
         });
 
         cards[0].innerHTML = "";
