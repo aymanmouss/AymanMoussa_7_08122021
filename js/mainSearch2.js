@@ -33,7 +33,6 @@ export default class MainSearch2 {
             }
           }
         }
-        console.log([...new Set(results)]);
 
         cards[0].innerHTML = "";
         [...new Set(results)].map((item) => {

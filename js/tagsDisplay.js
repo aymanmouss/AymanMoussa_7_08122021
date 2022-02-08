@@ -12,7 +12,7 @@ let values = [];
 let values1 = [];
 let values2 = [];
 import RecipesList from "./recipesList.js";
-import recipesData from "./recipesData.js";
+
 const ingTagFunc = (data) => {
   results = [];
   data.map((ing) => {

@@ -4,6 +4,7 @@ import FilterTags from "./js/filterTags.js";
 import FilterList from "./js/filterList.js";
 import MainSearch from "./js/mainSearch.js";
 import MainSearch2 from "./js/mainSearch2.js";
+import TagFilterDisplay from "./js/filterTags.js";
 const cards = document.getElementsByClassName("cards");
 const btnSearch = document.getElementsByClassName("btn-search");
 const searchBar = document.getElementsByClassName("searchBar");
@@ -14,5 +15,5 @@ recipesData.map((item) => {
 btnSearch[0].innerHTML = new FilterTags().tags();
 
 new FilterList();
-// new MainSearch();
-new MainSearch2();
+new MainSearch();
+// new MainSearch2();
